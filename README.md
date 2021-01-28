@@ -20,24 +20,39 @@
 
 ## Overview
 
-_**Protozoa Records** is an ecommerce web application focusing on the purchase of vinyl music records. This application is a modern take on the well-known Los Angeles record shop Amoeba Music's website. Ive seen huge local vinyl music shops websites outrageously outdated (maybe an aesthetic choice) i.e. Ameoba Records in LA, Reckless Records in Chicago, House of Oldies in NYC. Good examples of what they could be: Shuga Records in Chicago, Rough Trade NYC 
+_**Protozoa Records** is an ecommerce web application focusing on the purchase of vinyl music records. This application is a modern take on the well-known Los Angeles record shop Amoeba Music's website. 
 
 
 <br>
 
 ## MVP
 
-_**Protozoa Records** MVP lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus fermentum risus vitae bibendum. Integer vel ipsum mollis odio sollicitudin ornare eu vel ex. In quis fringilla velit, ac maximus quam. Etiam eget placerat neque. Aenean faucibus sem non nisi lobortis ullamcorper._
+_**Protozoa Records** MVP The application will feature full CRUD on both the React front-end and Ruby on Rails back-end._
 
 <br>
 
 ### Goals
 
-- _Lorem ipsum, dolor sit amet,_
-- _consectetur adipiscing elit._
-- _Phasellus dapibus fermentum risus vitae bibendum._
-- _Integer vel ipsum mollis odio sollicitudin ornare eu vel ex._
-- _etc._
+## Server-side (Back-End)
+- _Ruby on Rails server_
+- _RESTful JSON endpoints_
+- _Database with 3 tables:_
+  -_User_-
+  -_Staff_-
+  -_Vinyl_-
+- _At least 1 association between tables:_
+  -_Users to Vinyl, many-to-many_- 
+- _Usage of Rails to interact with database and build models_
+- _Implement controllers for full CRUD_
+
+## Client-side (Front-End)
+- _React application_
+- _At least 8 components_
+- _Purely React for DOM manipulation_
+- _Data consumption from Rails API and rendered in components_
+- _Usage of React Router_
+- _Styled with Flexbox and/or Grid_
+- _Full CRUD_
 
 <br>
 
@@ -54,11 +69,7 @@ _**Protozoa Records** MVP lorem ipsum dolor sit amet, consectetur adipiscing eli
 
 <br>
 
-### Client (Front End)
-
 #### Wireframes
-
-> Use the Wireframes section to display desktop, tablet and mobile views. No hand-drawn wireframes. Use a tool like wireframe.cc, Whimsical or AdobeXD
 
 ![Dummy Link](url)
 
