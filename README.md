@@ -37,11 +37,11 @@ _**Protozoa Records** MVP The application will feature full CRUD on both the Rea
 - _Ruby on Rails server_
 - _RESTful JSON endpoints_
 - _Database with 3 tables:_
-  -_User_-
-  -_Staff_-
-  -_Vinyl_-
+  -_User_
+  -_Staff_
+  -_Vinyl_
 - _At least 1 association between tables:_
-  -_Users to Vinyl, many-to-many_- 
+  -_Users to Vinyl, many-to-many_ 
 - _Usage of Rails to interact with database and build models_
 - _Implement controllers for full CRUD_
 
