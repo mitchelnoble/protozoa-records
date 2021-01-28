@@ -20,7 +20,7 @@
 
 ## Overview
 
-**Protozoa Records** is an ecommerce web application focusing on the purchase of vinyl music records. This application is a modern take on the well-known Los Angeles record shop Amoeba Music's website. 
+**Protozoa Records** is an ecommerce application focusing on the purchase of vinyl music records. This application is a modern take on the well-known Los Angeles record shop Amoeba Music's website focusing on responsive design and user experience. Users will be able to view a list of records, purchase records, register to the website, log-in, and sign-out. Users designated as Staff will be able to create new vinyl records, edit their data, and delete them.    
 
 
 <br>
@@ -33,7 +33,7 @@ _**Protozoa Records** MVP The application will feature full CRUD on both the Rea
 
 ### Goals
 
-## Server-side (Back-End)
+## Server (Back-End)
 - _Ruby on Rails server_
 - _RESTful JSON endpoints_
 - _Database with 3 tables:_
@@ -45,7 +45,7 @@ _**Protozoa Records** MVP The application will feature full CRUD on both the Rea
 - _Usage of Rails to interact with database and build models_
 - _Implement controllers for full CRUD_
 
-## Client-side (Front-End)
+## Client (Front-End)
 - _React application_
 - _At least 8 components_
 - _Purely React for DOM manipulation_
