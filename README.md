@@ -1,4 +1,4 @@
-# protozoa-records
+![Protozoa Landing Logo](https://user-images.githubusercontent.com/74211139/106198415-dbf9b400-6168-11eb-844a-5b76c5bdebc5.png)
 
 - [Overview](#overview)
 - [MVP](#mvp)
