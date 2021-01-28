@@ -20,7 +20,7 @@
 
 ## Overview
 
-_**Protozoa Records** is an ecommerce web application focusing on the purchase of vinyl music records. This application is a modern take on the well-known Los Angeles record shop Amoeba Music's website. 
+**Protozoa Records** is an ecommerce web application focusing on the purchase of vinyl music records. This application is a modern take on the well-known Los Angeles record shop Amoeba Music's website. 
 
 
 <br>
