@@ -27,10 +27,6 @@
 
 ## MVP
 
-_**Protozoa Records** MVP The application will feature full CRUD on both the React front-end and Ruby on Rails back-end._
-
-<br>
-
 ### Server (Back-End)
 - _Ruby on Rails server_
 - _RESTful JSON endpoints_
@@ -75,7 +71,7 @@ _**Protozoa Records** MVP The application will feature full CRUD on both the Rea
 
 ![Protozoa Records Component Tree ](https://user-images.githubusercontent.com/74211139/106238940-a24f9a00-61b6-11eb-858e-b9ff6c1ae40f.png)
 
-#### Component Hierarchy
+#### Component Breakdown
 
 ``` structure
 
@@ -84,20 +80,32 @@ src
       |__ fonts
       |__ graphics
       |__ images
-      |__ mockups
 |__ components/
-      |__ Header.jsx
+      |__ Nav.jsx
       |__ Footer.jsx
       |__ Layout.jsx
       |__ Vinyl.jsx
-|__ container/
+      |__ Review.jsx
+      |__ Location.jsx
+|__ containers/
+      |__ VinylContainer.jsx
+      |__ ReviewsContainer.jsx
+|__ screens/
+      |__ Landing.jsx
+      |__ VinylList.jsx
+      |__ Login.jsx
+      |__ Register.jsx
+      |__ About.jsx
+      |__ Location.js
 |__ services/
+      |__ api-config.js
+      |__ auth.js
+      |__ reviews.js
+      |__ vinyl.js
 
 ```
 
 #### Time Estimates
-
-> Use this section to estimate the time necessary to build out each of the components you've described above.
 
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
@@ -109,8 +117,6 @@ src
 
 <br>
 
-### Server (Back End)
-
 #### ERD Model
 
 > Use this section to display an image of a computer generated ERD model. You can use draw.io, Lucidchart or another ERD tool.
@@ -121,14 +127,19 @@ src
 
 ## Post-MVP
 
-> Use this section to document ideas you've had that would be fun (or necessary) for your Post-MVP. This will be helpful when you return to your project after graduation!
+-_Star ratings with review submission_
+-_Working shopping bag component with checkout screen_
+-_More genres with respective vinyl records_
 
 ***
 
 ## Code Showcase
 
-> Use this section to include a brief code snippet of functionality that you are proud of and a brief description.
 
 ## Code Issues & Resolutions
 
-> Use this section to list of all major issues encountered and their resolution.
+
+## Linkedin 
+
+[Mitchel's Linkedin Profile](https://www.linkedin.com/in/mitchel-noble/)
+
