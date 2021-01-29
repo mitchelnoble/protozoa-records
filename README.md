@@ -57,7 +57,8 @@
 |     Library      | Description                                |
 | :--------------: | :----------------------------------------- |
 |      React       | _useState, useParams, useEffect._ |
-|   React Router   | _Link, Smooth Scroll, Router, useHistory._ |
+|   React Router   | _Link, Router, useHistory._ |
+|   React Scroll   | _smooth scroll, scrolltotop, Link_ |
 |     Ruby on Rails      | _bcrypt, cors, puma, pry._ |
 
 
