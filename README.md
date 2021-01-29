@@ -31,9 +31,7 @@ _**Protozoa Records** MVP The application will feature full CRUD on both the Rea
 
 <br>
 
-### Goals
-
-## Server (Back-End)
+### Server (Back-End)
 - _Ruby on Rails server_
 - _RESTful JSON endpoints_
 - _Database with 3 tables:_
@@ -45,7 +43,7 @@ _**Protozoa Records** MVP The application will feature full CRUD on both the Rea
 - _Usage of Rails to interact with database and build models_
 - _Implement controllers for full CRUD_
 
-## Client (Front-End)
+### Client (Front-End)
 - _React application_
 - _At least 8 components_
 - _Purely React for DOM manipulation_
@@ -71,11 +69,11 @@ _**Protozoa Records** MVP The application will feature full CRUD on both the Rea
 
 #### Wireframes
 
-![Wireframes for Protozoa Records](https://user-images.githubusercontent.com/74211139/106224447-3bbb8380-6198-11eb-8cfa-388e3934353c.png)
+![Protozoa Records - Landing](https://user-images.githubusercontent.com/74211139/106242610-d201a080-61bc-11eb-954e-86b1eefa2e1a.png)
 
 #### Component Tree
 
-> Use this section to display the structure of how your React components are being rendered. This should show the parent to child relation between you components. In other words, show which components are rendering the other components. 
+![Protozoa Records Component Tree ](https://user-images.githubusercontent.com/74211139/106238940-a24f9a00-61b6-11eb-858e-b9ff6c1ae40f.png)
 
 #### Component Hierarchy
 
@@ -96,12 +94,6 @@ src
 |__ services/
 
 ```
-
-#### Component Tree
-
-> Use this section to include a link to your component tree.
-
-[Component tree](url)
 
 #### Time Estimates
 
