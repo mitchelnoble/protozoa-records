@@ -138,7 +138,6 @@ src
 | Route App.js |    H     |     2 hrs      |     x hrs     |     TBD     |
 | Front-end debugging |   H   |   5 hrs   |   x hrs   |   TBD   |
 | Back-end debugging |   H   |   5 hrs   |   x hrs   |   TBD   |
-
 | TOTAL               |    -     |     61 hrs      |     x hrs     |     TBD     |
 
 <br>
