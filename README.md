@@ -38,7 +38,7 @@ _**Protozoa Records** MVP The application will feature full CRUD on both the Rea
 - _RESTful JSON endpoints_
 - _Database with 3 tables:_
   -_User_
-  -_Staff_
+  -_Reviews_
   -_Vinyl_
 - _At least 1 association between tables:_
   -_Users to Vinyl, many-to-many_ 
@@ -71,37 +71,13 @@ _**Protozoa Records** MVP The application will feature full CRUD on both the Rea
 
 #### Wireframes
 
-![Dummy Link](url)
-
-- Desktop Landing
-
-![Dummy Link](url)
-
-- Desktop Hero
-
-![Dummy Link](url)
-
-- Resource Index
-
-![Dummy Link](url)
-
-- Resource Show
-
-![Dummy Link](url)
-
-- Tablet Resource Index
-
-![Dummy Link](url)
-
-- Mobile Resource Index
+![Wireframes for Protozoa Records](https://user-images.githubusercontent.com/74211139/106224447-3bbb8380-6198-11eb-8cfa-388e3934353c.png)
 
 #### Component Tree
 
 > Use this section to display the structure of how your React components are being rendered. This should show the parent to child relation between you components. In other words, show which components are rendering the other components. 
 
 #### Component Hierarchy
-
-> Use this section to define your React components and the data architecture of your app. This should be a reflection of how you expect your directory/file tree to look like. 
 
 ``` structure
 
@@ -113,6 +89,10 @@ src
       |__ mockups
 |__ components/
       |__ Header.jsx
+      |__ Footer.jsx
+      |__ Layout.jsx
+      |__ Vinyl.jsx
+|__ container/
 |__ services/
 
 ```
