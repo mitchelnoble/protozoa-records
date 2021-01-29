@@ -144,7 +144,7 @@ src
 
 #### ERD Model
 
-![ERD for Protozoa Records](https://user-images.githubusercontent.com/74211139/106259044-8c9c9d80-61d3-11eb-83b4-930dd8a046f5.png)
+![ERD for Protozoa Records](https://user-images.githubusercontent.com/74211139/106291680-cafc8180-6200-11eb-906d-0acf355ca153.png)
 
 <br>
 
