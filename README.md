@@ -15,7 +15,7 @@
 - [Post-MVP](#post-mvp)
 - [Code Showcase](#code-showcase)
 - [Code Issues & Resolutions](#code-issues--resolutions)
-- [Linkedin Profile](#Linkedin Profile)
+- [Linkedin Profile](#Linkedin-Profile)
 <br>
 
 ## Overview
