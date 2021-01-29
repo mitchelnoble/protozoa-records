@@ -65,7 +65,7 @@
 
 #### Wireframes
 
-![Protozoa Records - Landing](https://user-images.githubusercontent.com/74211139/106242610-d201a080-61bc-11eb-954e-86b1eefa2e1a.png)
+![Wireframes](https://user-images.githubusercontent.com/74211139/106251883-63c3da80-61ca-11eb-93f2-8a1c546f97df.png)
 
 #### Component Tree
 
