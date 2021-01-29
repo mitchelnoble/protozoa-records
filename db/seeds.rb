@@ -8,12 +8,10 @@
 
 vinyl_list = Vinyl.create([
   {
-
-  },
-  {
-
-  },
-  {
-
+    name:"",
+    artist:"",
+    price:"",
+    description:"",
+    img_url:"",
   },
 ])
