@@ -15,7 +15,7 @@
 - [Post-MVP](#post-mvp)
 - [Code Showcase](#code-showcase)
 - [Code Issues & Resolutions](#code-issues--resolutions)
-
+- [Linkedin Profile](#Linkedin Profile)
 <br>
 
 ## Overview
@@ -96,12 +96,15 @@ src
       |__ Login.jsx
       |__ Register.jsx
       |__ About.jsx
-      |__ Location.js
+      |__ VinylDetail.jsx
 |__ services/
       |__ api-config.js
       |__ auth.js
       |__ reviews.js
       |__ vinyl.js
+|__ utils/
+      |__ filter.js
+     
 
 ```
 
@@ -109,17 +112,38 @@ src
 
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
-| Add Contact Form    |    L     |     3 hrs      |     2 hrs     |    3 hrs    |
-| Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| TOTAL               |          |     6 hrs      |     3 hrs     |     TBD     |
+| Add Image Files in Assets    |    L     |     5 hrs      |     x hrs     |    x hrs    |
+| Creating back-end controllers    |    H    |     2 hrs      |     x hrs     |    x hrs    |
+| Creating back-end routes    |    H     |     2 hrs      |     x hrs     |    x hrs    |
+| Creating back-end models    |    H     |     2 hrs      |     x hrs     |    x hrs    |
+| Creating back-end seed data    |    H     |     2 hrs      |     x hrs     |    x hrs    |
+| Setting up dependencies  |    H     |     1 hrs      |     x hrs     |    x hrs    |
+| Write functions for API calls for Vinyl |    H     |     3 hrs      |     x hrs     |     TBD     |
+| Write functions for API calls for User |    H     |    3 hrs    |   x hrs   |  TBD   |
+| Build Nav Component |    H     |     2 hrs      |     x hrs     |     TBD     |
+| Build Footer Component |    H     |     2 hrs      |     x hrs     |     TBD     |
+| Build Layout Component |    H     |     3 hrs      |     x hrs     |     TBD     |
+| Build Vinyl Component |    H     |     3 hrs      |     x hrs     |     TBD     |
+| Build Review Component |    L     |     5 hrs      |     x hrs     |     TBD     |
+| Build Location Component |    H     |     2 hrs      |     x hrs     |     TBD     |
+| Create and route vinyl container |    H     |     1 hrs      |     x hrs     |     TBD     |
+| Create and route review container |    L     |     1 hrs      |     x hrs     |     TBD     |
+| Create and route Landing screen |    H     |     1 hrs      |     x hrs     |     TBD     |
+| Create and route VinylList screen |    H     |     1 hrs      |     x hrs     |     TBD     |
+| Create and route VinylDetail screen |    H     |     1 hrs      |     x hrs     |     TBD     |
+| Create and route Login screen |    H     |     1 hrs      |     x hrs     |     TBD     |
+| Create and route Register screen |    H     |     1 hrs      |     x hrs     |     TBD     |
+| Create and route About screen |    L     |     2 hrs      |     x hrs     |     TBD     |
+| Write functions for filtering VinylList in utils |    L     |     3 hrs      |     x hrs     |     TBD     |
+| Route App.js |    H     |     2 hrs      |     x hrs     |     TBD     |
+| Front-end debugging |   H   |   5 hrs   |   x hrs   |   TBD   |
+| Back-end debugging |   H   |   5 hrs   |   x hrs   |   TBD   |
 
-> _Why is this necessary? Time frames are key to the development cycle. You have limited time to code your app, and your estimates can then be used to evaluate possibilities of your MVP and post-MVP based on time needed. It's best you assume an additional hour for each component, as well as a few hours added to the total time, to play it safe._
+| TOTAL               |          |     61 hrs      |     x hrs     |     TBD     |
 
 <br>
 
 #### ERD Model
-
-> Use this section to display an image of a computer generated ERD model. You can use draw.io, Lucidchart or another ERD tool.
 
 <br>
 
@@ -139,7 +163,7 @@ src
 ## Code Issues & Resolutions
 
 
-## Linkedin 
+## Linkedin Profile
 
-[Mitchel's Linkedin Profile](https://www.linkedin.com/in/mitchel-noble/)
+[Mitchel's Linkedin](https://www.linkedin.com/in/mitchel-noble/)
 
