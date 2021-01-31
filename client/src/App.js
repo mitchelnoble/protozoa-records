@@ -50,7 +50,7 @@ function App() {
             <Register handleRegister={handleRegister} />
           </Route>
           <Route path='/'>
-            <TeachersContainer currentUser={currentUser} />
+            {/* <TeachersContainer currentUser={currentUser} /> */}
           </Route>
         </Switch>
       </Layout>

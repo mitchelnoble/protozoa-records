@@ -5,7 +5,7 @@ export default function Layout(props) {
   return (
     <div>
       <header>
-        <h1></h1>
+        <h1>Vinyls</h1>
         {currentUser ? (
           <>
             <p>{currentUser.username}</p>
@@ -18,7 +18,7 @@ export default function Layout(props) {
       <hr />
       {currentUser && (
         <>
-          <Link to="/vinyls">Foods</Link>
+          <Link to="/vinyls">Vinyls</Link>
         </>
       )}
       {props.children}
