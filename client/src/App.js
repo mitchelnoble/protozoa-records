@@ -32,7 +32,25 @@ function App() {
     setCurrentUser(null);
   };
 
-  return <div className="App"></div>;
-}
+  return (
+    <div className="App">
+           <Layout
+        currentUser={currentUser}
+        handleLogout={handleLogout}
+      >
+        <Switch>
+          <Route path='/login'>
+            <Login handleLogin={handleLogin} />
+          </Route>
+          <Route path='/register'>
+            <Register handleRegister={handleRegister} />
+          </Route>
+          <Route path='/'>
+            <TeachersContainer currentUser={currentUser} />
+          </Route>
+        </Switch>
+      </Layout>
+    </div>;
+  )}
 
 export default App;
