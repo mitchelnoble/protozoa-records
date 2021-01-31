@@ -93,26 +93,33 @@ vinyl_list = Vinyl.create([
   },
 ])
 
-genre_list = Genre.create([
-  {
-    genre:"Jazz"
-  },
-  {
-    genre:"Electronic"
-  },
-  {
-    genre:"Funk"
-  },
-  {
-    genre:"House"
-  },
-  {
-    genre:"Soul"
-  },
-  {
-    genre:"Dance"
-  },
-  {
-    genre:"R&B"
-  },
-])
+# genre_list = Genre.create([
+#   {
+#     genre:"Jazz"
+#     vinyl_id:""
+#   },
+#   {
+#     genre:"Electronic"
+#     vinyl_id:""
+#   },
+#   {
+#     genre:"Funk"
+#     vinyl_id:""
+#   },
+#   {
+#     genre:"House"
+#     vinyl_id:""
+#   },
+#   {
+#     genre:"Soul"
+#     vinyl_id:""
+#   },
+#   {
+#     genre:"Dance"
+#     vinyl_id:""
+#   },
+#   {
+#     genre:"R&B"
+#     vinyl_id:""
+#   }
+# ])
