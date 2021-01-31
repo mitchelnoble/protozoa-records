@@ -6,11 +6,13 @@
 #   movies = Movie.create([{ title: 'Star Wars' }, { title: 'Lord of the Rings' }])
 #   Character.create(title: 'Luke', movie: movies.first)
 
-user_list = User.create!([
-  {
-    
-  }
-])
+# user_list = User.create!([
+#   {
+#    username:
+#    email:
+#    password:
+#   }
+# ])
 
 
 Vinyl.destroy_all
