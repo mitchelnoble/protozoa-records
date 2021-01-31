@@ -67,7 +67,7 @@ vinyl_list = Vinyl.create([
     title:"Discovery",
     artist:"Daft Punk",
     price:239.99,
-    description:"Discovery is the second studio album by French electronic music duo Daft Punk, released on 26 February 2001 by Virgin Records. It marks a shift from the Chicago house sound prevalent on their first studio record, Homework (1997), to a house style more heavily inspired by disco, post-disco, garage house, and R&B. Comparing their stylistic approach to their previous album, band member Thomas Bangalter described Discovery as an exploration of song structures and musical forms whereas Homework was "raw" electronic music. He also described Discovery as a reflection of the duo's childhood memories, when they listened to music with a more playful and innocent viewpoint.",
+    description:"Discovery is the second studio album by French electronic music duo Daft Punk, released on 26 February 2001 by Virgin Records. It marks a shift from the Chicago house sound prevalent on their first studio record, Homework (1997), to a house style more heavily inspired by disco, post-disco, garage house, and R&B. Comparing their stylistic approach to their previous album, band member Thomas Bangalter described Discovery as an exploration of song structures and musical forms whereas Homework was 'raw' electronic music. He also described Discovery as a reflection of the duo's childhood memories, when they listened to music with a more playful and innocent viewpoint.",
     img_url:"assets/Vinyl Images/Vinyl 9/31NW3E29H5L.jpg",
   },
   {
@@ -95,24 +95,24 @@ vinyl_list = Vinyl.create([
 
 genre_list = Genre.create([
   {
-    type:"Jazz"
+    genre:"Jazz"
   },
   {
-    type:"Electronic"
+    genre:"Electronic"
   },
   {
-    type:"Funk"
+    genre:"Funk"
   },
   {
-    type:"House"
+    genre:"House"
   },
   {
-    type:"Soul"
+    genre:"Soul"
   },
   {
-    type:"Dance"
+    genre:"Dance"
   },
   {
-    type:"R&B"
+    genre:"R&B"
   },
 ])
