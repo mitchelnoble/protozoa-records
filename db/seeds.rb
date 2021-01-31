@@ -5,9 +5,17 @@
 #
 #   movies = Movie.create([{ title: 'Star Wars' }, { title: 'Lord of the Rings' }])
 #   Character.create(title: 'Luke', movie: movies.first)
+
+user_list = User.create!([
+  {
+    
+  }
+])
+
+
 Vinyl.destroy_all
 
-vinyl_list = Vinyl.create([
+vinyl_list = Vinyl.create!([
   {
     title:"Choose Your Weapon",
     artist:"Hiatus Kaiyote",

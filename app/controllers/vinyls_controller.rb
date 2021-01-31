@@ -1,5 +1,6 @@
 class VinylsController < ApplicationController
   before_action :set_vinyl, only: [:show, :update, :destroy]
+  before_action :authorize_request, except: [:index, :show]
 
   # GET /vinyls
   def index
