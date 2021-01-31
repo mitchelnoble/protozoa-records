@@ -10,18 +10,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_01_31_011408) do
+ActiveRecord::Schema.define(version: 2021_01_31_020800) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
-
-  create_table "genres", force: :cascade do |t|
-    t.string "genre"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.bigint "vinyl_id", null: false
-    t.index ["vinyl_id"], name: "index_genres_on_vinyl_id"
-  end
 
   create_table "reviews", force: :cascade do |t|
     t.text "comment"
@@ -50,12 +42,11 @@ ActiveRecord::Schema.define(version: 2021_01_31_011408) do
     t.bigint "genre_id", null: false
     t.string "img_url"
     t.string "artist"
+    t.text "genre", default: [], array: true
     t.index ["genre_id"], name: "index_vinyls_on_genre_id"
     t.index ["user_id"], name: "index_vinyls_on_user_id"
   end
 
-  add_foreign_key "genres", "vinyls"
   add_foreign_key "reviews", "users"
-  add_foreign_key "vinyls", "genres"
   add_foreign_key "vinyls", "users"
 end
