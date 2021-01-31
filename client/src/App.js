@@ -1,6 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { useHistory } from "react-router-dom";
 import { Switch, Route } from "react-router-dom";
+import Login from './screens/Login/Login';
+import Register from './screens/Register/Register';
+import Layout from './layouts/Layout';
+import { loginUser, registerUser, verifyUser, removeToken } from './services/auth';
 
 function App() {
   const [currentUser, setCurrentUser] = useState(null);
@@ -50,7 +54,7 @@ function App() {
           </Route>
         </Switch>
       </Layout>
-    </div>;
+    </div>
   )}
 
 export default App;
