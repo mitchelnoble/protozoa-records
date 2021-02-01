@@ -1,0 +1,17 @@
+.nav {
+  display: grid;
+  grid-template-areas:
+    "C1 C2 C3 C4 C5"
+    "B1 B2 B3 B4 B5";
+  justify-items: center;
+}
+
+.nav-logo{
+ grid-area: C3;
+}
+
+.login-icon{
+  grid-area: B5;
+  justify-self: end;
+  margin-right: 5px;
+}

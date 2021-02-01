@@ -1,10 +1,16 @@
 import React, { useState, useEffect } from "react";
 import { useHistory } from "react-router-dom";
 import { Switch, Route } from "react-router-dom";
-import Login from './screens/Login/Login';
-import Register from './screens/Register/Register';
-import Layout from './layouts/Layout';
-import { loginUser, registerUser, verifyUser, removeToken } from './services/auth';
+import Login from "./screens/Login/Login";
+import Register from "./screens/Register/Register";
+import Layout from "./layouts/Layout";
+import {
+  loginUser,
+  registerUser,
+  verifyUser,
+  removeToken,
+} from "./services/auth";
+import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 
 function App() {
   const [currentUser, setCurrentUser] = useState(null);
@@ -38,23 +44,21 @@ function App() {
 
   return (
     <div className="App">
-           <Layout
-        currentUser={currentUser}
-        handleLogout={handleLogout}
-      >
+      <Layout currentUser={currentUser} handleLogout={handleLogout}>
         <Switch>
-          <Route path='/login'>
+          <Route path="/login">
             <Login handleLogin={handleLogin} />
           </Route>
-          <Route path='/register'>
+          <Route path="/register">
             <Register handleRegister={handleRegister} />
           </Route>
-          <Route path='/'>
+          <Route path="/">
             {/* <TeachersContainer currentUser={currentUser} /> */}
           </Route>
         </Switch>
       </Layout>
     </div>
-  )}
+  );
+}
 
 export default App;
