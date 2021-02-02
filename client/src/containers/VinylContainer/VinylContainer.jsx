@@ -3,18 +3,19 @@ import { Switch, Route, useHistory } from "react-router-dom";
 import VinylCreate from "../../screens/VinylCreate/VinylCreate";
 import VinylEdit from "../../screens/VinylEdit/VinylEdit";
 import VinylDetail from "../../screens/VinylDetail/VinylDetail";
+import VinylList from "../../screens/VinylList/VinylList";
 import {
-  deleteVinyl,
+  destroyVinyl,
   getAllVinyls,
   postVinyl,
-  putVinyl,
+  updateVinyl,
 } from "../../services/vinyls";
 
 export default function VinylContainer(props) {
   const [vinyls, setVinyls] = useState([]);
   const history = useHistory();
   const { currentUser } = props;
-
+  
   useEffect(() => {
     const fetchVinyls = async () => {
       const vinylData = await getAllVinyls();
@@ -30,7 +31,7 @@ export default function VinylContainer(props) {
   };
 
   const handleDelete = async (id) => {
-    await deleteVinyl(id);
+    await destroyVinyl(id);
     setVinyls((prevState) =>
       prevState.filter((vinylItem) => {
         return vinylItem.id !== id;
@@ -39,7 +40,7 @@ export default function VinylContainer(props) {
   };
 
   const handleUpdate = async (id, vinylData) => {
-    const updatedVinyl = await putVinyl(id, vinylData);
+    const updatedVinyl = await updateVinyl(id, vinylData);
     setVinyls((prevState) =>
       prevState.map((vinylItem) => {
         return vinylItem.id === Number(id) ? updatedVinyl : vinylItem;
@@ -50,21 +51,24 @@ export default function VinylContainer(props) {
 
   return (
     <Switch>
-      <Route path="/vinyls/:id/edit">
-        <VinylEdit vinyls={vinyls} handleUpdate={handleUpdate} />
-      </Route>
-      <Route path="/vinyls/:id">
-        <VinylDetail vinyls={vinyls} />
-      </Route>
-      <Route path="/vinyls/new">
-        <VinylCreate handleCreate={handleCreate} />
-      </Route>
       <Route path="/vinyls">
         <VinylList
           vinyls={vinyls}
           handleDelete={handleDelete}
           currentUser={currentUser}
         />
+      </Route>
+      <Route path="/vinyls/:id/edit">
+        <VinylEdit
+          vinyls={vinyls}
+          handleUpdate={handleUpdate}
+        />
+      </Route>
+      <Route path="/vinyls/:id">
+        <VinylDetail vinyls={vinyls} />
+      </Route>
+      <Route path="/vinyls/sell">
+        <VinylCreate handleCreate={handleCreate} />
       </Route>
     </Switch>
   );

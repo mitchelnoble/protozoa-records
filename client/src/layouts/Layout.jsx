@@ -1,15 +1,18 @@
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import Nav from '../components/Nav'; 
 
 export default function Layout(props) {
-  const { currentUser, handleLogout } = props;
+  const { currentUser } = props;
+  const { handleLogout } = props;
   return (
     <div>
-      <Nav/>
+      <Nav
+        currentUser={currentUser}
+        handleLogout={handleLogout}
+      />
       <hr />
       {currentUser && (
         <>
-          <Link to="/vinyls">Vinyls</Link>
         </>
       )}
       {props.children}

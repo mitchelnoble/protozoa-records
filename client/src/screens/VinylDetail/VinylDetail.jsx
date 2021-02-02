@@ -3,20 +3,22 @@ import React from 'react';
 
 
 export default function VinylDetail(props) {
-  const { vinyl } = props;
+  // const { vinyls } = props;
+  console.log(props);
 
   return (
-    <Link className="vinyl" to={`/detail/${vinyl._id}`}>
+    <>
       <img
-        className="vinyl-image"
-        src={vinyl.img_url[0].image}
+        className="vinyls-image"
+        src={props.img_url}
         alt={props.title}
       />
-      <div className="vinyl-title">{vinyl.title}</div>
-      <div className="vinyl-artist">{`${vinyl.artist}`}</div>
-      <div className="vinyl-price">{`${vinyl.price}`}</div>
-      <div className="vinyl-description">{`${vinyl.description}`}</div>
-      <div className="vinyl-genre">{`${vinyl.genre}`}</div>
-    </Link>
+      <div className="vinyls-title">{props.title}</div>
+      <div className="vinyls-artist">{`${props.artist}`}</div>
+      <div className="vinyls-price">{`${props.price}`}</div>
+      <div className="vinyls-description">{`${props.description}`}</div>
+      <div className="vinyls-genre">{`${props.genre}`}</div>
+      </>
   );
 };
+
