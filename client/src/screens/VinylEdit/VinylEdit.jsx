@@ -5,7 +5,7 @@ export default function VinylEdit(props) {
   const [formData, setFormData] = useState({
     name: "",
   });
-  const { name } = formData;
+
   const { vinyls, handleUpdate } = props;
   const { id } = useParams();
 
@@ -46,11 +46,21 @@ export default function VinylEdit(props) {
       <h3>Update Your Record</h3>
       <label>
         Title:
-        <input type="text" name="title" value={formData.title} onChange={handleChange} />
+        <input
+          type="text"
+          name="title"
+          value={formData.title}
+          onChange={handleChange}
+        />
       </label>
       <label>
         Artist:
-        <input type="text" name="artist" value={formData.artist} onChange={handleChange} />
+        <input
+          type="text"
+          name="artist"
+          value={formData.artist}
+          onChange={handleChange}
+        />
       </label>
       <label>
         Price:
@@ -73,11 +83,21 @@ export default function VinylEdit(props) {
       </label>
       <label>
         Genre:
-        <input type="text" name="genre" value={formData.genre} onChange={handleChange} />
+        <input
+          type="text"
+          name="genre"
+          value={formData.genre}
+          onChange={handleChange}
+        />
       </label>
       <label>
         Image Link:
-        <input type="url" name="img_url" value={formData.img_url} onChange={handleChange} />
+        <input
+          type="url"
+          name="img_url"
+          value={formData.img_url}
+          onChange={handleChange}
+        />
       </label>
       <button>Submit</button>
     </form>
