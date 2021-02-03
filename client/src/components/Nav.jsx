@@ -1,7 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-// import logo1 from '../assets/Brand Images/Protozoa Landing Logo.png';
-import logo from '../assets/Brand Images/Protozoa Records Mobile Logo.png';
 import '../styles/component-style/Nav.css';
 
 export default function Nav(props) {
