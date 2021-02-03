@@ -1,0 +1,30 @@
+.details-container{
+  display: grid;
+  grid-template-columns: 1fr;
+
+}
+
+.detail-container{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.edit-link{
+  text-align: center;
+  background: none;
+  border: none;
+  outline: inherit;
+  font: inherit;
+  cursor: pointer;
+  font-family: "Audiowide";
+}
+
+.delete-button {
+  background: none;
+  border: none;
+  outline: inherit;
+  font: inherit;
+  cursor: pointer;
+  font-family: "Audiowide";
+}

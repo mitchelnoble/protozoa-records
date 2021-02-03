@@ -10,7 +10,8 @@ import {
   verifyUser,
   removeToken,
 } from "./services/auth";
-import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
+// import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
+import VinylContainer from "./containers/VinylContainer/VinylContainer";
 
 function App() {
   const [currentUser, setCurrentUser] = useState(null);
@@ -53,7 +54,7 @@ function App() {
             <Register handleRegister={handleRegister} />
           </Route>
           <Route path="/">
-            {/* <TeachersContainer currentUser={currentUser} /> */}
+            <VinylContainer currentUser={currentUser} />
           </Route>
         </Switch>
       </Layout>

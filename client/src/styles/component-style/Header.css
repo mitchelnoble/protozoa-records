@@ -1,0 +1,18 @@
+.header {
+  display: grid;
+  grid-template-areas: "C1 C2 C3 C4 C5";
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  font-family: "Audiowide", sans;
+}
+
+.header-logo {
+  grid-area: C3;
+}
+
+.user-greeting {
+  grid-area: C5;
+  display: flex;
+  align-self: flex-end;
+  
+}
