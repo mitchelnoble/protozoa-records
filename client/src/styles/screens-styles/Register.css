@@ -1,0 +1,55 @@
+.register-container {
+  height: 100%;
+  font-family: "Oswald", sans;
+  display: grid;
+  
+  align-items: center;
+  justify-content: center;
+  /* background-image: url("https://i.imgur.com/U0vN1Cd.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+}
+.all-register{
+  text-align: center;
+  margin-top: 5em;
+  border: 1px solid gray;
+  box-shadow: 4px 5px 6px gray;
+}
+
+.regitster-title {
+  justify-self: center;  
+}
+
+.username-label{
+ justify-self: end;
+}
+
+.register-form{
+  margin-left: 11.9px;
+  justify-self: end;
+}
+
+.password-label{
+  justify-self: end;
+}
+
+.register-password-form{
+  margin-left: 15px;
+  justify-self: end;
+}
+
+.email-form{
+  margin-left: 38.4px;
+  text-align: end;
+  justify-self: end;
+}
+
+.email-label{
+  justify-self: end;
+}
+
+.register-button{
+ font-family: "Oswald";
+}

@@ -1,11 +1,11 @@
 import api from './api-config';
 
-export const createVinyl = async (data) => {
+export const postVinyl = async (data) => {
   const resp = await api.post('/vinyls', { vinyl: data})
   return resp.data
 }
 
-export const readAllVinyls = async () => {
+export const getAllVinyls = async () => {
   const resp = await api.get('/vinyls')
   return resp.data
 }

@@ -1,18 +1,14 @@
 .nav {
   display: grid;
   grid-template-areas:
-    "C1 C2 C3 C4 C5"
     "B1 B2 B3 B4 B5";
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   justify-items: center;
-  font-family: 'Audiowide', sans;
+  font-family: "Audiowide", sans;
+  background-image: linear-gradient(grey, white);
 }
 
-.nav-logo{
- grid-area: C1;
-}
-
-.login-icon{
+.login-icon {
   grid-area: B5;
   text-decoration: none;
   /* justify-self: end;
@@ -20,19 +16,29 @@
   font-size: 0.8rem; */
 }
 
-.records-link{
+.logout-button {
+  background: none;
+  border: none;
+  outline: inherit;
+  font: inherit;
+  cursor: pointer;
+  font-family: "Audiowide";
+  grid-area: B5;
+}
+
+.records-link {
   grid-area: B1;
   text-decoration: none;
 }
-.genres-link{
+.genres-link {
   grid-area: B2;
   text-decoration: none;
 }
-.sell-link{
-  grid-area: B3;
+.sell-link {
+  grid-area: B4;
   text-decoration: none;
 }
-.about-link{
-  grid-area: B4;
+.about-link {
+  grid-area: B3;
   text-decoration: none;
 }

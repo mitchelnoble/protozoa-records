@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import '../../styles/screens-styles/Login.css';
 
 export default function Login(props) {
   const [formData, setFormData] = useState({
@@ -19,34 +20,39 @@ export default function Login(props) {
 
   return (
     <div className="auth-container" >
-      <h2>login</h2>
-      <hr />
+      <div className="all-login">
+
+      <h2 className="login-title">Login</h2>
       <form onSubmit={(e) => {
         e.preventDefault();
         handleLogin(formData);
       }} >
-        <label>
+        <label className="username-label">
           Username:
-            <input
+            <input className="username-form"
             name="username"
             type="text"
             value={username}
             onChange={handleChange}
-          />
+            />
         </label>
-        <label>
+        <br />
+        <label className="password-label">
           Password:
-            <input
+            <input className="password-form"
             name="password"
             type="password"
             value={password}
             onChange={handleChange}
-          />
+            />
         </label>
         <hr />
-        <button>Login</button>
-        <Link to="/register">Register</Link>
+        <button className="login-button">Login</button>
+        <br />
+        <p>or</p>
+        <Link className="logout-link" to="/register">Register</Link>
       </form>
+            </div>
     </div>
   )
 }
