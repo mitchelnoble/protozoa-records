@@ -15,7 +15,7 @@ export default function VinylContainer(props) {
   const [vinyls, setVinyls] = useState([]);
   const history = useHistory();
   const { currentUser } = props;
-  
+
   useEffect(() => {
     const fetchVinyls = async () => {
       const vinylData = await getAllVinyls();
@@ -51,24 +51,21 @@ export default function VinylContainer(props) {
 
   return (
     <Switch>
-      <Route path="/vinyls">
+      <Route exact path="/vinyls">
         <VinylList
           vinyls={vinyls}
           handleDelete={handleDelete}
           currentUser={currentUser}
         />
       </Route>
-      <Route path="/vinyls/:id/edit">
-        <VinylEdit
-          vinyls={vinyls}
-          handleUpdate={handleUpdate}
-        />
+      <Route exact path="/vinyls/:id">
+        <VinylDetail vinyls={vinyls} currentUser={currentUser} />
       </Route>
-      <Route path="/vinyls/:id">
-        <VinylDetail vinyls={vinyls} />
+      <Route exact path="/vinyls/:id/edit">
+        <VinylEdit vinyls={vinyls} handleUpdate={handleUpdate} />
       </Route>
-      <Route path="/vinyls/sell">
-        <VinylCreate handleCreate={handleCreate} />
+      <Route exact path="/vinyls/sell">
+        <VinylCreate vinyls={vinyls} handleCreate={handleCreate} />
       </Route>
     </Switch>
   );

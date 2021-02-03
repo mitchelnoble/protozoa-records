@@ -11,7 +11,7 @@ export default function VinylList(props) {
     <div className="vinyls-container">
       {vinyls.map((vinyl) => {
         return (
-            <Link to={`/vinyls/${vinyls.id}:id`}>
+            <Link to={`/vinyls/${vinyl.id}`}>
           <div className="vinyl-container">
             <img
         className="vinyl-image"

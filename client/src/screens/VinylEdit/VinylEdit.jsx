@@ -1,10 +1,10 @@
-import { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
 
 export default function VinylEdit(props) {
   const [formData, setFormData] = useState({
-    name: ''
-  })
+    name: "",
+  });
   const { name } = formData;
   const { vinyls, handleUpdate } = props;
   const { id } = useParams();
@@ -12,53 +12,60 @@ export default function VinylEdit(props) {
   useEffect(() => {
     const prefillFormData = () => {
       const vinylItem = vinyls.find((vinylItem) => {
-        return vinylItem.id === Number(id)
-      })
+        return vinylItem.id === Number(id);
+      });
       setFormData({
-        name: vinylItem.name
-      })
-    }
+        title: vinylItem.title,
+        artist: vinylItem.artist,
+        price: vinylItem.price,
+        description: vinylItem.description,
+        genre: vinylItem.genre,
+        img_url: vinylItem.img_url,
+      });
+    };
     if (vinyls.length) {
-      prefillFormData()
+      prefillFormData();
     }
-  }, [vinyls, id])
+  }, [vinyls, id]);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData(prevState => ({
+    setFormData((prevState) => ({
       ...prevState,
-      [name]: value
-    }))
-  }
+      [name]: value,
+    }));
+  };
 
   return (
-    <form onSubmit={(e) => {
-      e.preventDefault();
-      handleUpdate(id, formData);
-    }}>
+    <form
+      onSubmit={(e) => {
+        e.preventDefault();
+        handleUpdate(id, formData);
+      }}
+    >
       <h3>Update Your Record</h3>
       <label>
         Title:
-        <input type="text" name="Title" value={name} onChange={handleChange} />
+        <input type="text" name="title" value={formData.title} onChange={handleChange} />
       </label>
       <label>
         Artist:
-        <input type="text" name="Artist" value={name} onChange={handleChange} />
+        <input type="text" name="artist" value={formData.artist} onChange={handleChange} />
       </label>
       <label>
         Price:
         <input
           type="number"
-          name="Price"
-          value={name}
+          name="price"
+          value={formData.price}
           onChange={handleChange}
         />
       </label>
       <label>
         Description:
         <textarea
-          name="Description"
-          value={name}
+          name="description"
+          value={formData.description}
           rows="10"
           cols="30"
           onChange={handleChange}
@@ -66,16 +73,11 @@ export default function VinylEdit(props) {
       </label>
       <label>
         Genre:
-        <input type="text" name="Genre" value={name} onChange={handleChange} />
+        <input type="text" name="genre" value={formData.genre} onChange={handleChange} />
       </label>
       <label>
         Image Link:
-        <input
-          type="url"
-          name="Image Link"
-          value={name}
-          onChange={handleChange}
-        />
+        <input type="url" name="img_url" value={formData.img_url} onChange={handleChange} />
       </label>
       <button>Submit</button>
     </form>

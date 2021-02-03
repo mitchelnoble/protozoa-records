@@ -1,11 +1,13 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
 
 export default function VinylCreate(props) {
   const [formData, setFormData] = useState({
     name: "",
   });
   const { name } = formData;
-  const { handleCreate } = props;
+  const { vinyls, handleCreate } = props;
+  const { id } = useParams();
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -19,32 +21,32 @@ export default function VinylCreate(props) {
     <form
       onSubmit={(e) => {
         e.preventDefault();
-        handleCreate(formData);
+        handleCreate(id, formData);
       }}
     >
-      <h3>Sell Your Record!</h3>
+      <h3>Sell Your Vinyl</h3>
       <label>
         Title:
-        <input type="text" name="Title" value={name} onChange={handleChange} />
+        <input type="text" name="title" value={formData.title} onChange={handleChange} />
       </label>
       <label>
         Artist:
-        <input type="text" name="Artist" value={name} onChange={handleChange} />
+        <input type="text" name="artist" value={formData.artist} onChange={handleChange} />
       </label>
       <label>
         Price:
         <input
           type="number"
-          name="Price"
-          value={name}
+          name="price"
+          value={formData.price}
           onChange={handleChange}
         />
       </label>
       <label>
         Description:
         <textarea
-          name="Description"
-          value={name}
+          name="description"
+          value={formData.description}
           rows="10"
           cols="30"
           onChange={handleChange}
@@ -52,16 +54,11 @@ export default function VinylCreate(props) {
       </label>
       <label>
         Genre:
-        <input type="text" name="Genre" value={name} onChange={handleChange} />
+        <input type="text" name="genre" value={formData.genre} onChange={handleChange} />
       </label>
       <label>
         Image Link:
-        <input
-          type="url"
-          name="Image Link"
-          value={name}
-          onChange={handleChange}
-        />
+        <input type="url" name="img_url" value={formData.img_url} onChange={handleChange} />
       </label>
       <button>Submit</button>
     </form>

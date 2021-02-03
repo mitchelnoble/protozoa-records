@@ -1,26 +1,36 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-
-
+import React, { useState, useEffect } from "react";
+import { Link, useParams } from "react-router-dom";
+import { readOneVinyl } from "../../services/vinyls";
 
 export default function VinylDetail(props) {
   const { vinyls, currentUser } = props;
-  console.log(vinyls);
+  
+  const { id } = useParams();
 
+  const [vinyl, setVinyl] = useState();
+
+  useEffect(() => {
+    const fetchVinyls = async () => {
+      const vinylData = await readOneVinyl(id);
+      setVinyl(vinylData);
+    };
+    fetchVinyls();
+  }, []);
+
+  console.log(vinyl);
   return (
     <>
-      <img
-        className="vinyl-image"
-        src={vinyls.img_url}
-        alt={vinyls.title}
-        />
-      <div className="vinyls-title">{vinyls.title}</div>
-      <div className="vinyls-artist">{`${vinyls.artist}`}</div>
-      <div className="vinyls-price">{`${vinyls.price}`}</div>
-      <div className="vinyls-description">{`${vinyls.description}`}</div>
-      <div className="vinyls-genre">{`${vinyls.genre}`}</div>
-      {currentUser ? <Link to="/vinyls/:id/edit">Edit/Delete</Link> : null}
-      </>
+      {vinyl && 
+      <>
+      <img className="vinyl-image" src={vinyl.img_url} alt={vinyls.title} />
+      <div className="vinyls-title">{vinyl.title}</div>
+      <div className="vinyls-artist">{`${vinyl.artist}`}</div>
+      <div className="vinyls-price">{`${vinyl.price}`}</div>
+      <div className="vinyls-description">{`${vinyl.description}`}</div>
+      <div className="vinyls-genre">{`${vinyl.genre}`}</div>
+        {currentUser ? <Link to={`/vinyls/${id}/edit`}>Edit/Delete</Link> : null}
+        </>
+      }
+    </>
   );
-};
-
+}
