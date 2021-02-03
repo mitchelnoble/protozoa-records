@@ -9,9 +9,9 @@ export default function Header(props) {
   
   return (
 
-    <div className="nav">
+    <div className="header">
       <Link to="/">
-        <img className="nav-logo" src={logo} alt="navigation logo" />
+        <img className="header-logo" src={logo} alt="navigation logo" />
       </Link>
       {currentUser ? (
         <>

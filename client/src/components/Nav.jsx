@@ -9,12 +9,8 @@ export default function Nav(props) {
   console.log(props);
   return (
     <div className="nav">
-      <Link to="/">
-             <img className="nav-logo" src={logo} alt="navigation logo" />
-      </Link>
         {currentUser ? (
           <>
-            <p className="user-greeting">Hi, {currentUser.username}!</p>
             <button className="logout-button" onClick={handleLogout}>Logout</button>
           </>
       ) : (

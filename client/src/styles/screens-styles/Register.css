@@ -1,4 +1,4 @@
-.auth-container {
+.register-container {
   height: 100%;
   font-family: "Oswald", sans;
   display: grid;
@@ -10,14 +10,14 @@
   no-repeat;
 
 }
-.all-login{
+.all-register{
   text-align: center;
   margin-top: 5em;
   border: 1px solid gray;
   box-shadow: 4px 5px 6px gray;
 }
 
-.login-title {
+.regitster-title {
   justify-self: center;  
 }
 
@@ -25,7 +25,8 @@
  justify-self: end;
 }
 
-.username-form{
+.register-form{
+  margin-left: 11.9px;
   justify-self: end;
 }
 
@@ -33,10 +34,21 @@
   justify-self: end;
 }
 
-.password-form{
+.register-password-form{
+  margin-left: 15px;
   justify-self: end;
 }
 
-.login-button {
-  font-family: "Oswald";
+.email-form{
+  margin-left: 38.4px;
+  text-align: end;
+  justify-self: end;
+}
+
+.email-label{
+  justify-self: end;
+}
+
+.register-button{
+ font-family: "Oswald";
 }
