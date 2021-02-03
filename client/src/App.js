@@ -10,7 +10,6 @@ import {
   verifyUser,
   removeToken,
 } from "./services/auth";
-// import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 import VinylContainer from "./containers/VinylContainer/VinylContainer";
 
 function App() {
@@ -53,7 +52,7 @@ function App() {
           <Route path="/register">
             <Register handleRegister={handleRegister} />
           </Route>
-          <Route exact path="/vinyls">
+          <Route path="/">
             <VinylContainer currentUser={currentUser} />
           </Route>
         </Switch>
