@@ -53,7 +53,7 @@ function App() {
           <Route path="/register">
             <Register handleRegister={handleRegister} />
           </Route>
-          <Route path="/vinyls">
+          <Route exact path="/vinyls">
             <VinylContainer currentUser={currentUser} />
           </Route>
         </Switch>
