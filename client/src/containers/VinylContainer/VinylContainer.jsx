@@ -32,11 +32,12 @@ export default function VinylContainer(props) {
 
   const handleDelete = async (id) => {
     await destroyVinyl(id);
-    setVinyls((prevState) =>
+    await setVinyls((prevState) =>
       prevState.filter((vinylItem) => {
-        return vinylItem.id !== id;
+        return vinylItem.id !== Number(id);
       })
     );
+    history.push('/vinyls')
   };
 
   const handleUpdate = async (id, vinylData) => {
@@ -51,21 +52,23 @@ export default function VinylContainer(props) {
 
   return (
     <Switch>
+      <Route exact path="/vinyls/sell">
+        <VinylCreate vinyls={vinyls} currentUser={currentUser} handleCreate={handleCreate} />
+      </Route>
       <Route exact path="/vinyls">
         <VinylList
           vinyls={vinyls}
-          handleDelete={handleDelete}
           currentUser={currentUser}
         />
       </Route>
       <Route exact path="/vinyls/:id">
-        <VinylDetail vinyls={vinyls} currentUser={currentUser} />
+        <VinylDetail vinyls={vinyls} currentUser={currentUser}
+          handleDelete={handleDelete}
+        />
       </Route>
       <Route exact path="/vinyls/:id/edit">
-        <VinylEdit vinyls={vinyls} handleUpdate={handleUpdate} />
-      </Route>
-      <Route exact path="/vinyls/sell">
-        <VinylCreate vinyls={vinyls} handleCreate={handleCreate} />
+        <VinylEdit vinyls={vinyls} handleUpdate={handleUpdate}
+        />
       </Route>
     </Switch>
   );

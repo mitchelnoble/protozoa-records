@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+
 
 export default function VinylCreate(props) {
   const [formData, setFormData] = useState({
     name: "",
   });
   const { name } = formData;
-  const { vinyls, handleCreate } = props;
-  const { id } = useParams();
+  const { handleCreate } = props;
+  
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -21,7 +21,7 @@ export default function VinylCreate(props) {
     <form
       onSubmit={(e) => {
         e.preventDefault();
-        handleCreate(id, formData);
+        handleCreate(formData);
       }}
     >
       <h3>Sell Your Vinyl</h3>
