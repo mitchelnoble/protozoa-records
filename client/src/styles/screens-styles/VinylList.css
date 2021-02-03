@@ -1,12 +1,18 @@
 .vinyls-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
   gap: 0.5rem;
   justify-content: center;
   align-items: center;
+  background-image: url("https://i.imgur.com/kT2UFGu.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-h1 {
+.vinyl-link {
   text-decoration: none;
 }
 
@@ -15,6 +21,7 @@ h1 {
   text-align: center;
   text-decoration: none;
   border: 1px solid gray;
+  background: rgba(255,255,255,1);
   box-shadow: 4px 5px 6px gray;
 }
 
