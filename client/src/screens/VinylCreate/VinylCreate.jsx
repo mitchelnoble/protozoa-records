@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-
+import '../../styles/screens-styles/VinylCreate.css'
 
 export default function VinylCreate(props) {
   const [formData, setFormData] = useState({
@@ -18,21 +18,24 @@ export default function VinylCreate(props) {
   };
 
   return (
-    <form
+    <div className="create-container">
+    <form className="create-form"
       onSubmit={(e) => {
         e.preventDefault();
         handleCreate(formData);
       }}
-    >
+      >
       <h3>Sell Your Vinyl</h3>
-      <label>
+      <label className="create-label">
         Title:
         <input type="text" name="title" value={formData.title} onChange={handleChange} />
-      </label>
+        </label>
+        <br />
       <label>
         Artist:
         <input type="text" name="artist" value={formData.artist} onChange={handleChange} />
-      </label>
+        </label>
+        <br />
       <label>
         Price:
         <input
@@ -40,8 +43,9 @@ export default function VinylCreate(props) {
           name="price"
           value={formData.price}
           onChange={handleChange}
-        />
-      </label>
+          />
+        </label>
+        <br />
       <label>
         Description:
         <textarea
@@ -50,17 +54,21 @@ export default function VinylCreate(props) {
           rows="10"
           cols="30"
           onChange={handleChange}
-        />
-      </label>
+          />
+        </label>
+        <br />
       <label>
         Genre:
         <input type="text" name="genre" value={formData.genre} onChange={handleChange} />
-      </label>
+        </label>
+        <br />
       <label>
         Image Link:
         <input type="url" name="img_url" value={formData.img_url} onChange={handleChange} />
-      </label>
+        </label>
+        <br />
       <button>Submit</button>
     </form>
+          </div>
   );
 }

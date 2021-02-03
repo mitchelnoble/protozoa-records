@@ -22,18 +22,18 @@ export default function VinylDetail(props) {
     <div className="details-container">
       {vinyl && (
         <div className="detail-container">
-          <img className="vinyl-image" src={vinyl.img_url} alt={vinyls.title} />
+          <img className="vinyls-image" src={vinyl.img_url} alt={vinyls.title} />
           <br />
-          <div className="vinyls-title">{vinyl.title}</div>
-          <div className="vinyls-artist">{`${vinyl.artist}`}</div>
-          <br />
-          <div className="vinyls-price">${`${vinyl.price}`}</div>
+          <h1 className="vinyls-title">{vinyl.title}</h1>
+          <h4 className="vinyls-artist">{`${vinyl.artist}`}</h4>
+          <h4 className="vinyls-price">${`${vinyl.price}`}</h4>
           <br />
           <div className="vinyls-description">{`${vinyl.description}`}</div>
           <br />
-          <div className="vinyls-genre">{`${vinyl.genre}`}</div>
+          <div className="vinyls-genre">Genre: {`${vinyl.genre}`}</div>
           <br />
           {currentUser ? <Link className="edit-link" to={`/vinyls/${id}/edit`}>Edit</Link> : null}
+          <br />
           <button className="delete-button" onClick={() => handleDelete(id)}>Delete</button>
         </div>
       )}
