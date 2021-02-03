@@ -15,7 +15,7 @@ export default function VinylDetail(props) {
       setVinyl(vinylData);
     };
     fetchVinyls();
-  }, []);
+  });
 
   console.log(vinyl);
   return (
