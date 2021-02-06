@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
+import '../../styles/screens-styles/VinylEdit.css';
 
 export default function VinylEdit(props) {
   const [formData, setFormData] = useState({
@@ -37,12 +38,13 @@ export default function VinylEdit(props) {
   };
 
   return (
-    <form
+    <div className="edit-container">
+    <form className="edit-form"
       onSubmit={(e) => {
         e.preventDefault();
         handleUpdate(id, formData);
       }}
-    >
+      >
       <h3>Update Your Record</h3>
       <label>
         Title:
@@ -51,8 +53,9 @@ export default function VinylEdit(props) {
           name="title"
           value={formData.title}
           onChange={handleChange}
-        />
-      </label>
+          />
+        </label>
+        <br />
       <label>
         Artist:
         <input
@@ -60,8 +63,9 @@ export default function VinylEdit(props) {
           name="artist"
           value={formData.artist}
           onChange={handleChange}
-        />
-      </label>
+          />
+        </label>
+        <br />
       <label>
         Price:
         <input
@@ -69,8 +73,9 @@ export default function VinylEdit(props) {
           name="price"
           value={formData.price}
           onChange={handleChange}
-        />
-      </label>
+          />
+        </label>
+        <br />
       <label>
         Description:
         <textarea
@@ -79,8 +84,9 @@ export default function VinylEdit(props) {
           rows="10"
           cols="30"
           onChange={handleChange}
-        />
-      </label>
+          />
+        </label>
+        <br />
       <label>
         Genre:
         <input
@@ -88,8 +94,9 @@ export default function VinylEdit(props) {
           name="genre"
           value={formData.genre}
           onChange={handleChange}
-        />
-      </label>
+          />
+        </label>
+        <br />
       <label>
         Image Link:
         <input
@@ -97,9 +104,11 @@ export default function VinylEdit(props) {
           name="img_url"
           value={formData.img_url}
           onChange={handleChange}
-        />
-      </label>
+          />
+        </label>
+        <br />
       <button>Submit</button>
     </form>
+          </div>
   );
 }

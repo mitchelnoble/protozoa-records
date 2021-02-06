@@ -17,6 +17,7 @@
 }
 
 .vinyl-container{
+  max-height: 24em;
   padding: 1rem;
   text-align: center;
   text-decoration: none;
