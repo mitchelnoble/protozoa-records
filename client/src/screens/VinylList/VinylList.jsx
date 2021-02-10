@@ -1,13 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import '../../styles/screens-styles/VinylList.css'
-// import { useHistory } from "react-router-dom";
+
 
 export default function VinylList(props) {
   const { vinyls } = props;
-  // const { currentUser } = props;
-  // const history = useHistory();
-  console.log(vinyls);
+
   return (
     <div className="vinyls-container">
       {vinyls.map((vinyl) => {

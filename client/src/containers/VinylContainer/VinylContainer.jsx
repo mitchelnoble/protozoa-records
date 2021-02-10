@@ -61,6 +61,12 @@ export default function VinylContainer(props) {
           currentUser={currentUser}
         />
       </Route>
+      <Route exact path="/">
+        <VinylList
+          vinyls={vinyls}
+          currentUser={currentUser}
+        />
+      </Route>
       <Route exact path="/vinyls/:id">
         <VinylDetail vinyls={vinyls} currentUser={currentUser}
           handleDelete={handleDelete}

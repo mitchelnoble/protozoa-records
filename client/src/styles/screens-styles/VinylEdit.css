@@ -1,0 +1,37 @@
+.edit-container {
+  font-family: "Oswald", sans;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+
+}
+.edit-form{
+  text-align: center;
+  margin-top: 5em;
+  border: 1px solid gray;
+  box-shadow: 4px 5px 6px gray;
+}
+
+.edit-label {
+  justify-self: left;  
+}
+
+.username-label{
+ justify-self: end;
+}
+
+.username-form{
+  justify-self: end;
+}
+
+.password-label{
+  justify-self: end;
+}
+
+.password-form{
+  justify-self: end;
+}
+
+.login-button {
+  font-family: "Oswald";
+}
