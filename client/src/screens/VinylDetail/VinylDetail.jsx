@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { Link, useParams, useHistory } from "react-router-dom";
-import { readOneVinyl, destroyVinyl } from "../../services/vinyls";
-import '../../styles/screens-styles/VinylDetail.css'
+import { Link, useParams } from "react-router-dom";
+import { readOneVinyl } from "../../services/vinyls";
+import "../../styles/screens-styles/VinylDetail.css";
 
 export default function VinylDetail(props) {
   const { vinyls, currentUser, handleDelete } = props;
@@ -15,14 +15,18 @@ export default function VinylDetail(props) {
       setVinyl(vinylData);
     };
     fetchVinyls();
-  }, []);
+  });
 
   console.log(vinyl);
   return (
     <div className="details-container">
       {vinyl && (
         <div className="detail-container">
-          <img className="vinyls-image" src={vinyl.img_url} alt={vinyls.title} />
+          <img
+            className="vinyls-image"
+            src={vinyl.img_url}
+            alt={vinyls.title}
+          />
           <br />
           <h1 className="vinyls-title">{vinyl.title}</h1>
           <h4 className="vinyls-artist">{`${vinyl.artist}`}</h4>
@@ -32,9 +36,15 @@ export default function VinylDetail(props) {
           <br />
           <div className="vinyls-genre">Genre: {`${vinyl.genre}`}</div>
           <br />
-          {currentUser ? <Link className="edit-link" to={`/vinyls/${id}/edit`}>Edit</Link> : null}
+          {currentUser ? (
+            <Link className="edit-link" to={`/vinyls/${id}/edit`}>
+              Edit
+            </Link>
+          ) : null}
           <br />
-          <button className="delete-button" onClick={() => handleDelete(id)}>Delete</button>
+          <button className="delete-button" onClick={() => handleDelete(id)}>
+            Delete
+          </button>
         </div>
       )}
     </div>

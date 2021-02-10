@@ -10,7 +10,6 @@ import {
   verifyUser,
   removeToken,
 } from "./services/auth";
-// import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 import VinylContainer from "./containers/VinylContainer/VinylContainer";
 
 function App() {
