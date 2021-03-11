@@ -4,6 +4,7 @@ import { Switch, Route } from "react-router-dom";
 import Login from "./screens/Login/Login";
 import Register from "./screens/Register/Register";
 import Layout from "./layouts/Layout";
+import About from "./screens/About/About"
 import {
   loginUser,
   registerUser,
@@ -48,6 +49,9 @@ function App() {
         <Switch>
           <Route path="/login">
             <Login handleLogin={handleLogin} />
+          </Route>
+          <Route path="/about">
+            <About />
           </Route>
           <Route path="/register">
             <Register handleRegister={handleRegister} />

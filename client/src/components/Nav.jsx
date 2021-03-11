@@ -21,9 +21,9 @@ export default function Nav(props) {
       <Link to="/vinyls" className="records-link">
         Vinyls
       </Link>
-      <Link to="/genres" className="genres-link">
+      {/* <Link to="/genres" className="genres-link">
         Genres
-      </Link>
+      </Link> */}
       {currentUser ? (
         <Link to="/vinyls/sell" className="sell-link">
           Sell
