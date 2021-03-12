@@ -28,22 +28,34 @@
 
 .vinyls-description {
   padding: 0 2em 0 2em;
-  text-align: left;
+  text-align: center;
+}
+
+.edit-and-delete-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .edit-link{
   text-align: center;
-  background: none;
-  border: none;
+  text-decoration: none;
+  width: 4em;
+  background: rgb(240, 240, 240);
+  color: black;
+  border: 1px solid black;
+  border-radius: 3px;
   outline: inherit;
   font: inherit;
   cursor: pointer;
   font-family: "Audiowide";
 }
 
+.edit-link:hover{
+  background: rgba(225,225,225,1);
+}
+
 .delete-button {
-  background: none;
-  border: none;
   outline: inherit;
   font: inherit;
   cursor: pointer;

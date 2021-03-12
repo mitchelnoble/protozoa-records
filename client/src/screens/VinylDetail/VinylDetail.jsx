@@ -37,7 +37,7 @@ export default function VinylDetail(props) {
           <div className="vinyls-genre">Genre: {`${vinyl.genre}`}</div>
           <br />
           {currentUser ? (
-            <>
+            <div className="edit-and-delete-buttons">
               <Link className="edit-link" to={`/vinyls/${id}/edit`}>
                 Edit
               </Link>
@@ -47,7 +47,7 @@ export default function VinylDetail(props) {
               >
                 Delete
               </button>
-            </>
+            </div>
           ) : null}
           <br />
         </div>
