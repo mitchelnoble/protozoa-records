@@ -1,15 +1,17 @@
 .edit-container {
   font-family: "Oswald", "sans";
-  display: grid;
+  margin: 10vh auto auto auto;
+  display: flex;
   align-items: center;
   justify-content: center;
+  width: 40vw;
+  height: 50vh;
+  border: 1px solid gray;
+  box-shadow: 4px 5px 6px gray;
 
 }
 .edit-form{
   text-align: center;
-  margin-top: 5em;
-  border: 1px solid gray;
-  box-shadow: 4px 5px 6px gray;
 }
 
 .edit-label {
@@ -32,6 +34,7 @@
   justify-self: end;
 }
 
-.login-button {
+.submit-button {
   font-family: "Oswald";
+  cursor: pointer;
 }

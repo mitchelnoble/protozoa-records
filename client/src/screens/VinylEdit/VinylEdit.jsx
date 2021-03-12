@@ -107,7 +107,8 @@ export default function VinylEdit(props) {
           />
         </label>
         <br />
-      <button>Submit</button>
+        <br />
+      <button className="submit-button">Submit</button>
     </form>
           </div>
   );
