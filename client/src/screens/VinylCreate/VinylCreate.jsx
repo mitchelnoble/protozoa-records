@@ -87,7 +87,8 @@ export default function VinylCreate(props) {
           />
         </label>
         <br />
-        <button>Submit</button>
+        <br />
+        <button className="submit-button">Submit</button>
       </form>
     </div>
   );
