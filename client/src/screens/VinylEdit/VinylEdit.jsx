@@ -45,7 +45,7 @@ export default function VinylEdit(props) {
         handleUpdate(id, formData);
       }}
       >
-      <h3>Update Your Record</h3>
+      <h3 className="edit-title">Update Your Record</h3>
       <label>
         Title:
         <input

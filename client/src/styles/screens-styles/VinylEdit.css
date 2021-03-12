@@ -5,11 +5,16 @@
   align-items: center;
   justify-content: center;
   width: 40vw;
-  height: 50vh;
+  height: 55vh;
   border: 1px solid gray;
   box-shadow: 4px 5px 6px gray;
 
 }
+
+.edit-title {
+  font-size: 1.5rem;
+}
+
 .edit-form{
   text-align: center;
 }
