@@ -25,9 +25,10 @@ export default function VinylCreate(props) {
           handleCreate(formData);
         }}
       >
-        <h3>Sell Your Vinyl</h3>
+        <h3 className="create-form-title">Sell Your Vinyl</h3>
         <label className="create-label">
           Title:
+           <br />
           <input
             type="text"
             name="title"
@@ -38,6 +39,7 @@ export default function VinylCreate(props) {
         <br />
         <label>
           Artist:
+           <br />
           <input
             type="text"
             name="artist"
@@ -48,6 +50,7 @@ export default function VinylCreate(props) {
         <br />
         <label>
           Price:
+           <br />
           <input
             type="number"
             name="price"
@@ -58,6 +61,7 @@ export default function VinylCreate(props) {
         <br />
         <label>
           Description:
+           <br />
           <textarea
             name="description"
             value={formData.description}
@@ -69,6 +73,7 @@ export default function VinylCreate(props) {
         <br />
         <label>
           Genre:
+           <br />
           <input
             type="text"
             name="genre"
@@ -79,6 +84,7 @@ export default function VinylCreate(props) {
         <br />
         <label>
           Image Link:
+           <br />
           <input
             type="url"
             name="img_url"

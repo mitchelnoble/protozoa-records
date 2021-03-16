@@ -21,9 +21,6 @@ export default function Login(props) {
   return (
     <div className="auth-container" >
       <div className="all-login">
-
-        <h2 className="login-title">Login</h2>
-        <br />
       <form onSubmit={(e) => {
         e.preventDefault();
         handleLogin(formData);
