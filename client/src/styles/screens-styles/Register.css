@@ -7,14 +7,14 @@
 }
 .all-register{
   text-align: center;
-  display: inline flex;
+  display: grid;
   align-items: center;
   justify-content: center;
   margin-top: 4em;
   border: 1px solid gray;
   box-shadow: 4px 5px 6px gray;
   width: 40vw;
-  height: 35vh;
+  height: 40vh;
   font-size: 1rem;
 }
 

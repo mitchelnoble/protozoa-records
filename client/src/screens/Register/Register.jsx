@@ -22,7 +22,6 @@ export default function Register(props) {
     <div className="register-container">
       <div className="all-register">
         <h2 className="register-title">Register</h2>
-        
         <form
           onSubmit={(e) => {
             e.preventDefault();
